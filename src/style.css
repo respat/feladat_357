@@ -7,3 +7,75 @@
 * Github: https://github.com/respat/
 * Licenc: GNU GPL
 */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #282828;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 0 auto;
+  width: 450px;
+  border-radius: 25px;
+  align-content: center;
+  justify-content: center;
+}
+
+
+.input {
+  width: 260px;
+  height: 40px;
+  margin: 20px 0;
+  border: none;
+  border-bottom: 2px solid lightskyblue;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.input:focus {
+  animation-name: form;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.input::placeholder {
+  text-align: center;
+  font-size: 16px;
+}
+
+.out:focus {
+  border-bottom: 2px solid lightskyblue;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  font-size: 16px;
+  margin: 40px 0px;
+  border: none;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 60px;
+  background-color: lightgreen;
+  border-radius: 30px;
+  color: gray;
+  font-size: 20px;
+}
+
+@keyframes form {
+  from {border-bottom: 2px solid lightskyblue;}
+  to {border-bottom: 5px solid lightskyblue;}
+}

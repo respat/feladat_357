@@ -9,6 +9,7 @@ Licenc: GNU GPL
 -->
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,10 +17,26 @@ Licenc: GNU GPL
     <link rel="stylesheet" href="style.css">
     <title>Feladat 357 - Resperger Patrik</title>
 </head>
+
 <body>
     <div class="container">
         <h1>Kalkulátor</h1>
+        <form id="form">
+            <input type="text" class="input" id="hossz" placeholder="Megmunkált hossz"  autocomplete="off" required>
+            <br>
+            <input type="text" class="input" id="elotolas" placeholder="Fordulatonkénti előtolás" autocomplete="off" required>
+            <br>
+            <input type="text" class="input" id="rpm" placeholder="Főorsó fordulatszám" autocomplete="off" required>
+            <br>
+            <input type="text" class="input out" id="ido" placeholder="Megmunkálási idő" autocomplete="off" readonly>
+            <br>
+            <div class="button">
+                <input type="button" class="btn" id="kiszamol" value="Kiszámít">
+            </div>
+
+        </form>
     </div>
     <script src="app.js"></script>
 </body>
+
 </html>
