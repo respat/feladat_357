@@ -22,19 +22,22 @@ Licenc: GNU GPL
     <div class="container">
         <h1>Kalkulátor</h1>
         <form id="form">
-            <input type="text" class="input" id="hossz" placeholder="Megmunkált hossz"  autocomplete="off" required>
+            <input type="text" class="input" id="hossz" placeholder="Megmunkált hossz"  autocomplete="off" required><span class="mertekegyseg">mm</span>
             <br>
-            <input type="text" class="input" id="elotolas" placeholder="Fordulatonkénti előtolás" autocomplete="off" required>
+            <input type="text" class="input" id="elotolas" placeholder="Fordulatonkénti előtolás" autocomplete="off" required><span class="mertekegyseg">mm</span>
             <br>
-            <input type="text" class="input" id="rpm" placeholder="Főorsó fordulatszám" autocomplete="off" required>
+            <input type="text" class="input" id="rpm" placeholder="Főorsó fordulatszám" autocomplete="off" required><span class="mertekegyseg">rpm</span>
             <br>
-            <input type="text" class="input out" id="ido" placeholder="Megmunkálási idő" autocomplete="off" readonly>
+            <input type="text" class="input out" id="ido" placeholder="Megmunkálási idő" autocomplete="off" readonly><span class="mertekegyseg">perc</span>
             <br>
             <div class="button">
                 <input type="button" class="btn" id="kiszamol" value="Kiszámít">
             </div>
-
         </form>
+        <div class="nevjegy">
+            <p>Resperger Patrik, SZOFT I/1/E</p>
+            <p>2022.02.11</p>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
