@@ -14,12 +14,12 @@ rpm = document.querySelector('#rpm');
 ido = document.querySelector('#ido');
 kiszamol = document.querySelector('#kiszamol');
 
-
 function kiszamit()
 {
     megmunkalasiIdo = (hossz.value / (rpm.value * elotolas.value));
-    ido.value = megmunkalasiIdo;
-    console.log(megmunkalasiIdo);
+    if(hossz.value != "" && rpm.value != "" && elotolas.value !=""){
+        ido.value = Math.round(megmunkalasiIdo);   
+    }
 } 
 
 kiszamol.addEventListener("click", () => {

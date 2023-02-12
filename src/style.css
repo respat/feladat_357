@@ -11,10 +11,18 @@
 
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-background-color: rgb(77, 204, 189);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(77,204,189,1);
+  background: radial-gradient(circle, transparent 20%, rgba(77,204,189,1) 20%, rgba(77,204,189,1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgba(77,204,189,1) 20%, rgba(77,204,189,1) 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#26665e 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #26665e 1.2000000000000002px, rgba(77,204,189,1) 1.2000000000000002px) -0.6000000000000001px 0;
+  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
 }
 
 .nevjegy {
@@ -24,22 +32,22 @@ background-color: rgb(77, 204, 189);
 }
 
 h1 {
-  margin: 30px 0px;
+  margin-top: 60px;
   font-weight: 300;
 }
 
 .container {
   display: flex;
+  align-self: center;
   flex-direction: column;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 450px;
-  height: 700px;
+  width: 420px;
   border-radius: 25px;
   align-content: center;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .mertekegyseg {
@@ -50,11 +58,11 @@ h1 {
 .input {
   text-align: center;
   font-size: 16px;
-  width: 260px;
+  min-width: 260px;
   height: 40px;
   margin: 20px 0;
   border: none;
-  border-bottom: 2px solid lightskyblue;
+  border-bottom: 2px solid rgb(77,204,189);
 }
 
 textarea:focus, input:focus{
@@ -62,7 +70,7 @@ textarea:focus, input:focus{
 }
 
 .input:focus {
-  border-bottom: 4px solid lightgreen;
+  border-bottom: 4px solid rgb(77,204,189);
 }
 
 .input::placeholder {
@@ -99,4 +107,24 @@ textarea:focus, input:focus{
 .btn:hover {
   background-color: rgb(64, 187, 173);
 }
+
+@media only screen and (max-width: 420px) {
+  .container {
+    width: 300px;
+  }
+
+  h1 {
+    margin-top: 20px;
+  }
+  .nevjegy {
+    font-size: 12px;
+  }
+  .btn {
+    margin: 20px 0px;
+  }
+  .input {
+    margin: 10px 0px;
+  }
+}
+
 
