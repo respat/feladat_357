@@ -9,6 +9,12 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+:root {
+  --primary-color: #657153;
+  --primary-light-color: #8aaa79;
+  --secondary-color:#282828;
+}
+
 * {
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
@@ -20,9 +26,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(77,204,189,1);
-  background: radial-gradient(circle, transparent 20%, rgba(77,204,189,1) 20%, rgba(77,204,189,1) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, rgba(77,204,189,1) 20%, rgba(77,204,189,1) 80%, transparent 80%, transparent) 15px 15px, linear-gradient(#26665e 1.2000000000000002px, transparent 1.2000000000000002px) 0 -0.6000000000000001px, linear-gradient(90deg, #26665e 1.2000000000000002px, rgba(77,204,189,1) 1.2000000000000002px) -0.6000000000000001px 0;
-  background-size: 30px 30px, 30px 30px, 15px 15px, 15px 15px;
+  background: rgb(138,170,121);
+  background: radial-gradient(circle, var(--primary-light-color) 44%, var(--primary-color) 110%);
 }
 
 .nevjegy {
@@ -62,7 +67,7 @@ h1 {
   height: 40px;
   margin: 20px 0;
   border: none;
-  border-bottom: 2px solid rgb(77,204,189);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 textarea:focus, input:focus{
@@ -70,7 +75,7 @@ textarea:focus, input:focus{
 }
 
 .input:focus {
-  border-bottom: 4px solid rgb(77,204,189);
+  border-bottom: 4px solid var(--primary-light-color);
 }
 
 .input::placeholder {
@@ -98,14 +103,14 @@ textarea:focus, input:focus{
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
   width: 200px;
   height: 60px;
-  background-color: rgb(77, 204, 189);
+  background-color: var(--primary-color);
   border-radius: 30px;
   color: white;
   font-size: 20px;
 }
 
 .btn:hover {
-  background-color: rgb(64, 187, 173);
+  background: linear-gradient(210deg, var(--primary-light-color) 0%, var(--primary-color) 110%);
 }
 
 @media only screen and (max-width: 420px) {
